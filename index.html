@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sorteador de Temas - Equipes</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="container">
+<h1>Sorteador de Temas para Equipes</h1>
+
+
+<section class="controls">
+<label for="teamsCount">Número de equipes:</label>
+<input id="teamsCount" type="number" min="1" max="50" value="4">
+
+
+<label for="uniqueAssign">
+<input id="uniqueAssign" type="checkbox" checked>
+Temas únicos por equipe
+</label>
+
+
+<button id="drawBtn" class="btn">Sortear</button>
+<button id="resetBtn" class="btn ghost">Limpar</button>
+</section>
+
+
+<section class="results" aria-live="polite">
+<h2>Resultados</h2>
+<ul id="resultsList" class="results-list"></ul>
+</section>
+
+
+<section class="themes-preview">
+<details open>
+<summary>Lista de temas (clicar para esconder)</summary>
+<ol id="themesList"></ol>
+</details>
+</section>
+
+
+<footer>
+<small>Desenvolvido para turmas de Ensino Médio Técnico em Desenvolvimento de Sistemas.</small>
+</footer>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
